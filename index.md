@@ -3,7 +3,13 @@ layout: home
 title: 
 date: 2020-11-20 
 ---
-### Hi, I'm Dumbarton 👋
-Dumbarton is a Jekyll Theme developed by [Tyler Butler](https://github.com/tcbutler320). The theme is designed for academics and features a simple home page with an about me section and an interactive highlights section to describe publications, coursework, courses taught, and projects. You can checkout the project on [Github](https://github.com/tcbutler320/Jekyll-Theme-Dumbarton), feel free to make contributions and feature requests and don't forget to give it a star.
+### Hello there!👋
+I’m Hong Kang (康宏 in chinese) a dedicated **M.Phil student** specializing in **Computer and Information Engineering** at the School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen (**CUHKSZ**). My academic journey is anchored at the [Human-Crypto Society Laboratory](https://hcslab.cuhk.edu.cn/) (**HCSLab**), where I'm privileged to be under the expert guidance of [Prof. Wei Cai](https://mypage.cuhk.edu.cn/academics/caiwei/).
 
-<a href="/contact.html" class="highlighted">Contact Me</a>
+Before the M.Phil studies, I proudly earned a **B.Eng** Degree in **Electronic Information Engineering** from the University of Electronic Science and Technology of China (**UESTC**) and a joint B.Eng Degree (with **First Class Honors**) from the University of Glasgow (**UofG**) in 2021. During this period, I had the honor of being supervised by [Prof. Chunbo Luo](https://computerscience.exeter.ac.uk/staff/cl535?sm=cl535#) and [Prof. Lei Zhang](https://www.gla.ac.uk/schools/engineering/staff/leizhang/).
+
+My research passion lies at the intersection of **Blockchain/Web3**, **Incentive Mechanism Design**, **Edge Intelligence**, and **Large Language Model**. As I delve deeper into these fields, I'm keenly exploring opportunities to further my studies with a **Ph.D.** program for the **Spring/Fall 2024**.
+
+Thank you for stopping by, and I look forward to potentially collaborating or crossing academic paths in the near future.
+<!-- 
+<a href="/contact.html" class="highlighted">Contact Me</a> -->

@@ -8,33 +8,33 @@
 # -----------BASE SETTINGS---------------#
 #========================================#
 
-title: Dumbarton 
+title: Hong Kang
 email: 
-description: a minimalistic jekyll theme for academics
+description: Personal website of Hong Kang
 baseurl:                                       # the subpath of your site, e.g. /blog
-url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
-image: /assets/img/dumbarton.png               # used to generate site link preview
+url: "https://kang-hong-29.github.io"          # the base hostname & protocol for your site, e.g. http://example.com
+image: /assets/img/icons/icon.png              # used to generate site link preview
 image_alt: A minimalistic jekyll theme for academic    # image description
 
 # =======================================#
 # -----------SITE SETTINGS---------------#
 #========================================#: 
-author: John Doe 
-profile_image: /assets/img/avatar/cropped.png #/assets/img/avatar/avatar.jpeg 
+author: Hong Kang 
+profile_image: /assets/img/avatar/me.jpg #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet:
-twitter: tbutler0x90
-github: tcbutler320
-linkedin: tyler-b-a700a1aa
-stackoverflow: '12935605'
-website: https://tbutler.org
+twitter: HongKkkang
+github: kang-hong-29
+linkedin: kang-hong-7666181a4
+stackoverflow: 
+website: 
 codepen: 
 medium: 
-email: developer.tbutler@gmail.com
-keybase: tbutler320
+email: kangryan05@gmail.com
+keybase: 
 pgp: 
 ctftime: 
-phonenumber: 
+phonenumber: (+86)132-8117-9656
 
 #========================================#
 # --------- UI THEMES -------------------#
@@ -116,7 +116,7 @@ exclude:
 # -----JEKYLL SCHOLAR SETTINGS-----------#
 #========================================#
 scholar:
-  last_name: Dumbarton
+  last_name: Kang
   style: apa
   locale: en
   source: /_bibliography/

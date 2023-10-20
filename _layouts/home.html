@@ -8,7 +8,7 @@ layout: default
 {% if site.help_tips %}
 <div class="toast animate__animated animate__pulse animate__infinite" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false" data-delay="10000" style="position: absolute; top: 10px; right: 10px;z-index: 10000;">
   <div class="toast-header">
-    <img src="/assets/img/icons/favicon-16x16.png" class="rounded mr-2" alt="...">
+    <img src="/assets/img/icons/mstile-150x150.png" class="rounded mr-2" alt="...">
     <strong class="mr-auto">Tyler Butler</strong>
     <small class="text-muted">11 mins ago</small>
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -22,23 +22,31 @@ layout: default
 {% endif %}
 
 <!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-0" style="position:relative;background-color:{{theme.home-background-color}};">
+<div class="card profile-card mx-auto">
   <div class="row">
     <div class="col-md-4">
       {% if site.animate %}
-        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
+        <img src="{{ site.profile_image }}" class="img-thumbnail profile-image animated" alt="...">
       {% else %}
-        <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
+        <img src="{{ site.profile_image }}" class="img-thumbnail profile-image" alt="...">
       {% endif %}
+
+      <!-- CONTACT DETAILS SECTION directly under the image -->
+      <div class="contact-details mt-3">
+        <p><strong>Email:</strong> {{ site.email }}</p>
+        <p><strong>Phone:</strong> {{ site.phonenumber }}</p>
+        <!-- Add more details as needed -->
+      </div>
     </div>
+
     <!-- EDUCATION SECTION -->
-    <div class="col-md-8">
+    <div class="col-md-8 education-section">
       {% if site.animate %}
-      <div class="card-body animate__animated animate__fadeInRight" style="color:{{theme.education-font-color}};">
+      <div class="card-body animated" style="--education-font-color: {{theme.education-font-color}};">
       {% else %}
-      <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
+      <div class="card-body mt-0" style="--education-font-color: {{theme.education-font-color}};">
       {% endif %}
-        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
+        <p>{{ content | markdownify }}</p>
         {% if site.home_option == "education" %}
           {% include education.html %}
         {% endif %}
@@ -46,6 +54,9 @@ layout: default
     </div>
   </div>
 </div>
+
+
+
 
 <!-- style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }}; -->
 
@@ -110,30 +121,47 @@ layout: default
                   {% endfor %}
                 </div>        
               </div>
-            {% elsif section.name == "Teaching" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
-                    {% for courses in site.data.teaching %}
-                    <div class="list-group">
+            {% elsif section.name == "Services" %}
+              <div class="tab-pane overflow-auto p-4" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                  <!-- <h3 class="text-center mb-4">Academic Services</h3> -->
+                  {% for service in site.data.services %}
+                  <div class="list-group mb-3 shadow">
                       <div class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">{{ courses.Schoool }}</h5>
-                          <p>{{ courses.Program }}</p>
-                          <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
-                        </div>
-                        <p class="mb-1">{{ courses.description }}</p>
-                        <small>{{ courses.Department }}</small>
+                          <div class="d-flex w-100 justify-content-between align-items-center">
+                              <h5 class="mb-1">{{ service.Role }}</h5>
+                              {% if service.Type == 'Journal' %}
+                              <span class="badge badge-primary ml-2">{{ service.Type }}</span>
+                              {% else %}
+                              <span class="badge badge-success ml-2">{{ service.Type }}</span>
+                              {% endif %}
+                          </div>
+                          <h6 class="mt-2">{{ service.ConferenceOrJournalName }}</h6>
                       </div>
-                    </div>
-                    {% endfor %}
+                  </div>
+                  {% endfor %}
               </div>
-            {% elsif section.name == "Coursework" %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <p><i>{{section.description}}</i></p>
+              
+              
+            {% elsif section.name == "Education" %}
+              <div class="tab-pane" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
+                <p class="mb-4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px;"><i>{{section.description}}</i></p>
                 <div class="list-group">
-                {% for courses in site.data.courses %}
-                  <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
-                {% endfor %}
+                    {% for entry in site.data.education %}
+                        <div class="education-entry">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="{{ entry.Icon }}" class="img-fluid" alt="Icon for {{ entry.School }}">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5>{{ entry.School }}</h5>
+                                    <p><i>{{ entry.Program }}</i></p>
+                                    {% if entry.Degree %}<p>{{ entry.Degree }}</p>{% endif %}
+                                    {% if entry.StartDate %}<p class="text-muted">Start Date: {{ entry.StartDate }}</p>{% endif %}
+                                    {% if entry.EndDate %}<p class="text-muted">End Date: {{ entry.EndDate }}</p>{% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
                 </div>
               </div>
             {% else %}
@@ -182,3 +210,137 @@ $('.collapse').collapse()
 <script>
 $('.show').show()
 </script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  /* General Styles */
+  body {
+      font-family: 'Poppins', sans-serif;
+      color: Black;
+  }
+
+  a {
+      font-family: 'Poppins', sans-serif;
+      color: #272343;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  /* Education Block Styles */
+  .education-entry {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 50px;
+      border-left: 2px solid #149f98;
+      animation: fadeIn 1s ease-in;
+  }
+
+  .education-entry:before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 10px;  /* Adjusted to align with the text */
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #149f98;
+  }
+
+  .education-entry img {
+      border-radius: 50%;
+      margin-bottom: 15px;
+      width: 180px;  /* Adjusted size */
+      height: 180px; /* Adjusted size */
+  }
+
+  .education-entry h5 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 20px;  /* Adjusted size */
+      font-weight: 600;
+      color: #149f98;
+      margin-bottom: 12px;  /* Adjusted spacing */
+  }
+
+  .education-entry p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;  /* Adjusted size */
+      margin: 0;
+      margin-bottom: 10px;  /* Adjusted spacing */
+  }
+
+  .education-entry .text-muted {
+      font-size: 15px;  /* Adjusted size */
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+</style>
+
+<style>
+    .card {
+    &.profile-card {
+      margin: auto;
+      border: none;
+      position: relative;
+      background-color: var(--home-bg-color);
+
+      .img-thumbnail {
+        &.profile-image {
+          /* width: 300px;
+          height: 400px; */
+          float: left;
+          border-radius: 20%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        &.animated {
+          animation-name: fadeInLeft;
+          animation-duration: 1s;
+        }
+      }
+
+      .additional-info {
+        h4 {
+          margin-top: 1rem;
+        }
+
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .education-section {
+        .card-body {
+          color: var(--education-font-color);
+
+          &.animated {
+            animation-name: fadeInRight;
+            animation-duration: 1s;
+          }
+
+          p {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+</style>
