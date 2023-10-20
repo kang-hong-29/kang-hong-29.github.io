@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+
+<html>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  The above 2 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+ -->
+<title>Hong Kang</title>
+<!-- Set the base URL for all relative URLs within the document -->
+<base href="https://kang-hong-29.github.io">
+
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
+
+<!-- Short description of the document (limit to 150 characters) -->
+<!-- This content *may* be used as a part of search engine results. -->
+<meta name="description" content="Personal website of Hong Kang">
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Verify website ownership -->
+<meta name="google-site-verification" content=""><!-- Google Search Console -->
+<meta name="yandex-verification" content=""><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content=""><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content=""><!-- Alexa Console -->
+<meta name="p:domain_verify" content=""><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content=""><!-- Norton Safe Web -->
+
+<!-- Allows control over how referrer information is passed -->
+<meta name="referrer" content="no-referrer">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=true">
+
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- Geo tags -->
+<!-- meta name="ICBM" content="latitude, longitude"-->
+<!-- meta name="geo.position" content="latitude;longitude"-->
+<!-- meta name="geo.region" content="country[-state]"><Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<!-- meta name="geo.placename" content="city/town"><eg. content="New York City" -->
+
+<!-- Link to an external CSS file -->
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Courgette&family=Lobster&family=Pacifico&family=Yellowtail&family=Noto+Sans+JP:wght@400;900&family=Poppins:wght@500&family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/main.css">
+<!-- BootStrap CDN --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<script src="https://kit.fontawesome.com/32a2b2a489.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script> 
+
+<!--  GIT TALK CDN  for comment system -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> 
+
+
+<!-- Provides information about an author or another person -->
+<link rel="me" href="mailto:kangryan05@gmail.com">
+<link rel="me" href="sms:+(+86)132-8117-9656">
+
+<!-- Open Search -->
+<!-- link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" -->
+
+<!-- Feeds -->
+<!-- link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS" -->
+<!-- link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" -->
+
+<!-- For IE 10 and below -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+<link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+<meta property="fb:app_id" content="">
+<meta property="og:url" content="https://kang-hong-29.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hong Kang, Personal website of Hong Kang">
+<meta property="og:image" content="/assets/img/icons/icon.png">
+<meta property="og:image:alt" content="A minimalistic jekyll theme for academic">
+<meta property="og:description" content="Personal website of Hong Kang">
+<meta property="og:site_name" content="Hong Kang">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Hong Kang">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HongKkkang">
+<meta name="twitter:creator" content="@HongKkkang">
+<meta name="twitter:url" content="https://kang-hong-29.github.io">
+<meta name="twitter:title" content="Personal website of Hong Kang">
+<meta name="twitter:description" content="Personal website of Hong Kang">
+<meta name="twitter:image" content="/assets/img/icons/icon.png">
+<meta name="twitter:image:alt" content="A minimalistic jekyll theme for academic">
+
+<!-- Used for adding in-document CSS -->
+
+
+
+<!-- JavaScript & No-JavaScript tags -->
+
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/styles/monokai-sublime.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script src="https://unpkg.com/@highlightjs/cdn-assets@10.5.0/languages/go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', ');
+</script>
+
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
+  <body style="background-color:;">
+    
+<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:Poppins;background-color:#10292e;">
+  <a class="navbar-brand" href="/index.html"><h4 style="font-family:Noto Sans JP;font-weight:600;color:#149f98;">Hong Kang</h4></a>
+  <button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-caret-down"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        
+              <li class="nav-item">
+                  <a href="about.html" class="nav-link" style="font-family:Poppins;color:#149f98;">About</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="publications.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Publications</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="blog.html" class="nav-link" style="font-family:Poppins;color:#149f98;">Blog</a>
+              </li>
+        
+              <li class="nav-item">
+                  <a href="/assets/pdf/vitae.pdf" class="nav-link" style="font-family:Poppins;color:#149f98;">Vitae</a>
+              </li>
+        
+    </ul>
+    <ul class="navbar-nav  justify-content-end">
+      <li class="nav-item">
+        
+<!-- Displays Social Media Icons based on _config.yml settings -->
+<span style="color:#CCCCCC;">
+    <i> &nbsp;&nbsp; </i>
+    
+        <a class="social-link" href="https://twitter.com/HongKkkang">
+        <span style="color: #CCCCCC;">
+            <i class="fab fa-twitter-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://github.com/kang-hong-29">
+        <span style="color: #CCCCCC;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://www.linkedin.com/in/kang-hong-7666181a4">
+        <span style="color: #CCCCCC;">
+            <i class="fab fa-linkedin fa-lg"></i></a>
+        </span>
+    
+    
+    
+    
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
+      
+
+<!--  HELP TIPS SECTION  -->
+<!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
+
+
+<!-- ABOUT ME SECTION -->
+<div class="card profile-card mx-auto">
+  <div class="row">
+    <div class="col-md-4">
+      
+        <img src="/assets/img/avatar/me.jpg" class="img-thumbnail profile-image animated" alt="...">
+      
+
+      <!-- CONTACT DETAILS SECTION directly under the image -->
+      <div class="contact-details mt-3">
+        <p><strong>Email:</strong> kangryan05@gmail.com</p>
+        <p><strong>Phone:</strong> (+86)132-8117-9656</p>
+        <!-- Add more details as needed -->
+      </div>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <div class="col-md-8 education-section">
+      
+      <div class="card-body animated" style="--education-font-color: ;">
+      
+        <p><h3 id="hello-there">Hello there!👋</h3>
+<p>I’m Hong Kang (康宏 in chinese) a dedicated <strong>M.Phil student</strong> specializing in <strong>Computer and Information Engineering</strong> at the School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen (<strong>CUHKSZ</strong>). My academic journey is anchored at the <a href="https://hcslab.cuhk.edu.cn/">Human-Crypto Society Laboratory</a> (<strong>HCSLab</strong>), where I’m privileged to be under the expert guidance of <a href="https://mypage.cuhk.edu.cn/academics/caiwei/">Prof. Wei Cai</a>.</p>
+
+<p>Before the M.Phil studies, I proudly earned a <strong>B.Eng</strong> Degree in <strong>Electronic Information Engineering</strong> from the University of Electronic Science and Technology of China (<strong>UESTC</strong>) and a joint B.Eng Degree (with <strong>First Class Honors</strong>) from the University of Glasgow (<strong>UofG</strong>) in 2021. During this period, I had the honor of being supervised by <a href="https://computerscience.exeter.ac.uk/staff/cl535?sm=cl535#">Prof. Chunbo Luo</a> and <a href="https://www.gla.ac.uk/schools/engineering/staff/leizhang/">Prof. Lei Zhang</a>.</p>
+
+<p>My research passion lies at the intersection of <strong>Blockchain/Web3</strong>, <strong>Incentive Mechanism Design</strong>, <strong>Edge Intelligence</strong>, and <strong>Large Language Model</strong>. As I delve deeper into these fields, I’m keenly exploring opportunities to further my studies with a <strong>Ph.D.</strong> program for the <strong>Spring/Fall 2024</strong>.</p>
+
+<p>Thank you for stopping by, and I look forward to potentially collaborating or crossing academic paths in the near future.
+<!-- 
+<a href="/contact.html" class="highlighted">Contact Me</a> --></p>
+</p>
+        
+           <!-- 
+  <h5 class="card-title" style="font-family:Noto Sans JP;font-size:18px;color:;">Education & Certifications</h5>
+  <ul class="list-unstyled">
+  
+    <li class="media">
+      <img src="/assets/img/icons/cusz.png" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;">The Chinese University of Hong Kong, Shenzhen</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Computer and Communication Engineering</i></p>
+        
+          <p>M.Phil</p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <img src="/assets/img/icons/uestc.png" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;">University of Electronic Science and Technology of China</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Electronic Information Engineering</i></p>
+        
+          <p>B.Eng</p>
+        
+      </div>
+    </li>
+    
+    <li class="media">
+      <img src="/assets/img/icons/uofg.png" class="mr-3" alt="...">
+      <div class="media-body">
+        <h5 style="font-family:Noto Sans JP;font-size:18px;color:;">University of Glasgow</h5>
+        <p style="font-family:Noto Sans JP;font-size:15px;color:;"><i>Elctrical and Electronic Engineering</i></p>
+        
+          <p>B.Eng with Honours of the First Class</p>
+        
+      </div>
+    </li>
+    
+  </ul> -->
+  <!-- 
+  <div class="card">
+    <div class="card-header" style="background-color: ;">
+      <h5 class="card-title" style="font-family:Noto Sans JP;font-size:18px;color:;">Education & Certifications</h5>
+    </div>
+    <div class="card-body" style="font-family:Noto Sans JP;font-size:18px;color:;">
+      
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <img src="/assets/img/icons/cusz.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-9">
+            <h5 class="card-title">The Chinese University of Hong Kong, Shenzhen</h5>
+            <p class="card-text"><i>Computer and Communication Engineering</i></p>
+            
+              <p class="card-text">M.Phil</p>
+            
+            
+              <p class="card-text"><small class="text-muted">Start Date: 2021-10</small></p>
+            
+            
+              <p class="card-text"><small class="text-muted">End Date: 2023-10</small></p>
+            
+          </div>
+        </div>
+      
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <img src="/assets/img/icons/uestc.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-9">
+            <h5 class="card-title">University of Electronic Science and Technology of China</h5>
+            <p class="card-text"><i>Electronic Information Engineering</i></p>
+            
+              <p class="card-text">B.Eng</p>
+            
+            
+              <p class="card-text"><small class="text-muted">Start Date: 2017-09</small></p>
+            
+            
+              <p class="card-text"><small class="text-muted">End Date: 2021-07</small></p>
+            
+          </div>
+        </div>
+      
+        <div class="row mb-4">
+          <div class="col-md-3">
+            <img src="/assets/img/icons/uofg.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-9">
+            <h5 class="card-title">University of Glasgow</h5>
+            <p class="card-text"><i>Elctrical and Electronic Engineering</i></p>
+            
+              <p class="card-text">B.Eng with Honours of the First Class</p>
+            
+            
+              <p class="card-text"><small class="text-muted">Start Date: 2017-09</small></p>
+            
+            
+              <p class="card-text"><small class="text-muted">End Date: 2021-07</small></p>
+            
+          </div>
+        </div>
+      
+    </div>
+  </div> -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- style="font-family:Poppins;background-color:#10292e; -->
+
+<!-- HOME HIGHLIGHTS SECTION --> 
+
+<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
+
+  <div class="card-header" style="background-color:#10292e;">
+    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+      
+        
+          <li class="nav-item">
+            <a class="nav-link shadow-none" id="" href="#publications" role="tab" aria-controls="publications" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Publications</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#courses" role="tab" aria-controls="courses" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Education</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#teaching" role="tab" aria-controls="teaching" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Services</a>
+          </li>
+        
+      
+        
+          <li class="nav-item">
+              <a class="nav-link" id="" href="#projects" role="tab" aria-controls="projects" aria-selected="true" style="font-family:Poppins;color:#149f98;"> Projects</a>
+          </li>
+        
+      
+    </ul>
+  </div>
+  <div class="card-body">          
+      <div class="tab-content mt-3">
+        
+          
+            
+              <div class="tab-pane active overflow-auto" id="publications" role="tabpanel">
+                <p><i>Author* means the author contributed equally to the work.</i></p>
+                <p class="card-text"><ol class="bibliography"><li><div class="row">
+  <div id="kangtmc" class="col-sm-8">
+    
+      <div class="title font-weight-bold">Bridging Incentives and Dependencies: An Iterative Combinatorial Auction Approach to Dependency-Aware Offloading in Mobile Edge Computing</div>
+      <div class="author">
+        
+          
+            
+              
+                <em>Kang, Hong</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  Li, Minghao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Lin, Lehao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fan, Sizheng,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Cai, Wei
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>IEEE Transactions on Mobile Computing (Under review)</em>
+      
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row">
+  <div id="NeuroNFT" class="col-sm-8">
+    
+      <div class="title font-weight-bold">NeuroNFT: An Autoencoder Enhanced Decentralized Framework for Digital Asset Immortality</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Lin, Lehao*,
+                
+              
+            
+          
+        
+          
+            
+              
+                <em>Kang, Hong*</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  Sun, Xinyao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fan, Sizheng,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Cai, Wei
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Under review of a CCF-A conference</em>
+      
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row">
+  <div id="LocPoS" class="col-sm-8">
+    
+      <div class="title font-weight-bold">LocPoS: A Location-based Proof-of-Stake Mechanism for Industrial Digital Twins</div>
+      <div class="author">
+        
+          
+            
+              
+                
+                  Zhao, Rong,
+                
+              
+            
+          
+        
+          
+            
+              
+                <em>Kang, Hong</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zhang, Qiyue,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fan, Sizheng,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Cai, Wei
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Under review of a CCF-A conference</em>
+      
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row">
+  <div id="kang2023combinatorial" class="col-sm-8">
+    
+      <div class="title font-weight-bold">Combinatorial Auction-enabled Dependency-Aware Offloading Strategy in Mobile Edge Computing</div>
+      <div class="author">
+        
+          
+            
+              
+                <em>Kang, Hong</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  Li, Minghao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Fan, Sizheng,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Cai, Wei
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In 2023 IEEE Wireless Communications and Networking Conference (WCNC)</em>
+      
+      
+        2023
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://ieeexplore.ieee.org/abstract/document/9569784" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row">
+  <div id="kang2021blockchain" class="col-sm-8">
+    
+      <div class="title font-weight-bold">Blockchain-enabled COVID-19 Contact Tracing Solutions</div>
+      <div class="author">
+        
+          
+            
+              
+                <em>Kang, Hong</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zhang, Zaixin,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dong, Junyi,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Xu, Hao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Valente Klaine, Paulo,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Zhang, Lei
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>Wireless Blockchain: Principles, Technologies and Applications</em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://ieeexplore.ieee.org/abstract/document/9598351" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li>
+<li><div class="row">
+  <div id="kang2021beeptrace" class="col-sm-8">
+    
+      <div class="title font-weight-bold">Beeptrace for covid-19 pandemic: A demo</div>
+      <div class="author">
+        
+          
+            
+              
+                <em>Kang, Hong*</em>,
+              
+            
+          
+        
+          
+            
+              
+                
+                  Zhang, Zaixin*,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Dong, Junyi,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Ji, Yinghao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  Xu, Hao,
+                
+              
+            
+          
+        
+          
+            
+              
+                
+                  and Zhang, Lei
+                
+              
+            
+          
+        
+      </div>
+
+      <div class="periodical">
+      
+        <em>In 2021 3rd Conference on Blockchain Research & Applications for Innovative Networks and Services (BRAINS)</em>
+      
+      
+        2021
+      
+      </div>
+    
+
+    <div class="links">
+    
+    
+    
+      <a href="https://ieeexplore.ieee.org/abstract/document/9569784" role="button" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+  </div>
+</div></li></ol></p>
+              </div>
+            
+          
+        
+            
+            
+              <div class="tab-pane" id="courses" role="tabpanel" aria-labelledby="courses-tab">
+                <p class="mb-4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px;"><i></i></p>
+                <div class="list-group">
+                    
+                        <div class="education-entry">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="/assets/img/icons/cusz.png" class="img-fluid" alt="Icon for The Chinese University of Hong Kong, Shenzhen">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5>The Chinese University of Hong Kong, Shenzhen</h5>
+                                    <p><i>Computer and Communication Engineering</i></p>
+                                    <p>M.Phil</p>
+                                    <p class="text-muted">Start Date: 2021-10</p>
+                                    <p class="text-muted">End Date: 2023-10</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="education-entry">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="/assets/img/icons/uestc.png" class="img-fluid" alt="Icon for University of Electronic Science and Technology of China">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5>University of Electronic Science and Technology of China</h5>
+                                    <p><i>Electronic Information Engineering</i></p>
+                                    <p>B.Eng</p>
+                                    <p class="text-muted">Start Date: 2017-09</p>
+                                    <p class="text-muted">End Date: 2021-07</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="education-entry">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="/assets/img/icons/uofg.png" class="img-fluid" alt="Icon for University of Glasgow">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5>University of Glasgow</h5>
+                                    <p><i>Elctrical and Electronic Engineering</i></p>
+                                    <p>B.Eng with Honours of the First Class</p>
+                                    <p class="text-muted">Start Date: 2017-09</p>
+                                    <p class="text-muted">End Date: 2021-07</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+              </div>
+            
+          
+        
+            
+            
+              <div class="tab-pane overflow-auto p-4" id="teaching" role="tabpanel" aria-labelledby="teaching-tab">  
+                  <!-- <h3 class="text-center mb-4">Academic Services</h3> -->
+                  
+                  <div class="list-group mb-3 shadow">
+                      <div class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between align-items-center">
+                              <h5 class="mb-1">Reviewer</h5>
+                              
+                              <span class="badge badge-primary ml-2">Journal</span>
+                              
+                          </div>
+                          <h6 class="mt-2">IEEE Transactions on Cloud Computing</h6>
+                      </div>
+                  </div>
+                  
+                  <div class="list-group mb-3 shadow">
+                      <div class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between align-items-center">
+                              <h5 class="mb-1">Reviewer</h5>
+                              
+                              <span class="badge badge-primary ml-2">Journal</span>
+                              
+                          </div>
+                          <h6 class="mt-2">IEEE Transactions on Mobile Computing</h6>
+                      </div>
+                  </div>
+                  
+                  <div class="list-group mb-3 shadow">
+                      <div class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between align-items-center">
+                              <h5 class="mb-1">Reviewer</h5>
+                              
+                              <span class="badge badge-success ml-2">Conference</span>
+                              
+                          </div>
+                          <h6 class="mt-2">IEEE International Conference on Communications (2022, 2023)</h6>
+                      </div>
+                  </div>
+                  
+                  <div class="list-group mb-3 shadow">
+                      <div class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between align-items-center">
+                              <h5 class="mb-1">Reviewer</h5>
+                              
+                              <span class="badge badge-success ml-2">Conference</span>
+                              
+                          </div>
+                          <h6 class="mt-2">BSCI 2023 : The 5th ACM International Symposium on Blockchain and Secure Critical Infrastructure (2022)</h6>
+                      </div>
+                  </div>
+                  
+              </div>
+              
+              
+            
+          
+        
+            
+            
+              <div class="tab-pane overflow-auto" id="projects" role="tabpanel" aria-labelledby="projects-tab">  
+                <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</i></p>
+                  
+                  <div class="media mt-2">
+                    <a href="https://example.com"><img src="http://placehold.it/100x100" class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+                    <div class="media-body">
+                      <h5 class="mt-0"><a href="https://example.com" class="highlighted">Project 1</a></h5>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+                      
+                        <h6><mark><u>Technologies</u></mark></h6>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">python</span>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="media mt-2">
+                    <a href="https://example.com"><img src="http://placehold.it/100x100" class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+                    <div class="media-body">
+                      <h5 class="mt-0"><a href="https://example.com" class="highlighted">Project 2</a></h5>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+
+                      
+                        <h6><mark><u>Technologies</u></mark></h6>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">c++</span>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="media mt-2">
+                    <a href="https://example.com"><img src="http://placehold.it/100x100" class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+                    <div class="media-body">
+                      <h5 class="mt-0"><a href="https://example.com" class="highlighted">Project 3</a></h5>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+
+                      
+                        <h6><mark><u>Technologies</u></mark></h6>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">Java</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">Maven</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">Jenkins</span>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="media mt-2">
+                    <a href="https://example.com"><img src="http://placehold.it/100x100" class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
+                    <div class="media-body">
+                      <h5 class="mt-0"><a href="https://example.com" class="highlighted">Project 4</a></h5>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 0
+
+                      
+                        <h6><mark><u>Technologies</u></mark></h6>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">Sonarcube</span>
+                        
+                        <span class="badge badge-secondary mr-1" style="background-color:Black;">Java</span>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                </div>        
+              </div>
+            
+          
+        
+      </div>
+  </div>
+</div>
+
+
+
+<!-- ANIMATE.JS ANIMATE LIBRARY
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+-->
+
+
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
+<script>
+    $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+</script> 
+
+<!-- OPTIONAL TOAST JS FUNCTION-->
+<script>
+    $(document).ready(function() {
+        $(".toast").toast("show");
+    });
+</script>
+
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>
+
+<script>
+$('.collapse').collapse()
+</script>
+
+<script>
+$('.show').show()
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  /* General Styles */
+  body {
+      font-family: 'Poppins', sans-serif;
+      color: Black;
+  }
+
+  a {
+      font-family: 'Poppins', sans-serif;
+      color: #272343;
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  /* Education Block Styles */
+  .education-entry {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 50px;
+      border-left: 2px solid #149f98;
+      animation: fadeIn 1s ease-in;
+  }
+
+  .education-entry:before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      top: 10px;  /* Adjusted to align with the text */
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #149f98;
+  }
+
+  .education-entry img {
+      border-radius: 50%;
+      margin-bottom: 15px;
+      width: 180px;  /* Adjusted size */
+      height: 180px; /* Adjusted size */
+  }
+
+  .education-entry h5 {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 20px;  /* Adjusted size */
+      font-weight: 600;
+      color: #149f98;
+      margin-bottom: 12px;  /* Adjusted spacing */
+  }
+
+  .education-entry p {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;  /* Adjusted size */
+      margin: 0;
+      margin-bottom: 10px;  /* Adjusted spacing */
+  }
+
+  .education-entry .text-muted {
+      font-size: 15px;  /* Adjusted size */
+  }
+
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+</style>
+
+<style>
+    .card {
+    &.profile-card {
+      margin: auto;
+      border: none;
+      position: relative;
+      background-color: var(--home-bg-color);
+
+      .img-thumbnail {
+        &.profile-image {
+          /* width: 300px;
+          height: 400px; */
+          float: left;
+          border-radius: 20%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        &.animated {
+          animation-name: fadeInLeft;
+          animation-duration: 1s;
+        }
+      }
+
+      .additional-info {
+        h4 {
+          margin-top: 1rem;
+        }
+
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .education-section {
+        .card-body {
+          color: var(--education-font-color);
+
+          &.animated {
+            animation-name: fadeInRight;
+            animation-duration: 1s;
+          }
+
+          p {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+</style>
+
+    </div>
+    <div class="dumbarton-spacer"></div>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">2023 - The Homepage of Hong Kang
+    </p>
+    <p class="navbar-text pull-right">
+            <!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: Black;">
+     
+        <a class="social-link" href="https://twitter.com/HongKkkang">
+        <span style="color: black;">
+            <i class="fab fa-twitter-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://github.com/kang-hong-29">
+        <span style="color: black;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
+    
+    
+        <a href="https://www.linkedin.com/in/kang-hong-7666181a4">
+        <span style="color: black;">
+            <i class="fab fa-linkedin fa-lg"></i></a>
+        </span>
+    
+    
+    
+    
+     
+    <i> &nbsp;&nbsp; </i>
+</span>
+
+    </p>
+  </div>
+</div> 
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
+  </body>
+</html>
