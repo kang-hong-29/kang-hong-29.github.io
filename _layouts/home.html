@@ -142,7 +142,7 @@ layout: default
               </div>
               
               
-            {% elsif section.name == "Education" %}
+              {% elsif section.name == "Education" %}
               <div class="tab-pane" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">
                 <p class="mb-4" style="font-family: 'Noto Sans JP', sans-serif; font-size: 20px;"><i>{{section.description}}</i></p>
                 <div class="list-group">
@@ -156,15 +156,17 @@ layout: default
                                     <h5>{{ entry.School }}</h5>
                                     <p><i>{{ entry.Program }}</i></p>
                                     {% if entry.Degree %}<p>{{ entry.Degree }}</p>{% endif %}
-                                    {% if entry.StartDate %}<p class="text-muted">Start Date: {{ entry.StartDate }}</p>{% endif %}
-                                    {% if entry.EndDate %}<p class="text-muted">End Date: {{ entry.EndDate }}</p>{% endif %}
+                                    {% if entry.Supervisor %}<p>Supervisor: {{ entry.Supervisor }}</p>{% endif %}
+                                    {% if entry.StartDate %}<p class="text-muted"><i class="fas fa-calendar-alt"></i> Start: {{ entry.StartDate }}</p>{% endif %}
+                                    {% if entry.EndDate %}<p class="text-muted"><i class="fas fa-calendar-check"></i> End: {{ entry.EndDate }}</p>{% endif %}
                                 </div>
                             </div>
                         </div>
                     {% endfor %}
                 </div>
               </div>
-            {% else %}
+             {% else %}
+            
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{{ section.content }} </p>              

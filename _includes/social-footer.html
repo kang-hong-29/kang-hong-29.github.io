@@ -43,5 +43,13 @@
             <i class="fab fa-keybase"></i></a>
         </span>
     {% endif %} 
+    {% if site.googlescholar %}
+    <a href="https://scholar.google.com/citations?user={{ site.googlescholar }}" target="_blank">
+        <span style="color: {{ theme.social-color }}; margin-bottom: -5px;">
+            <img src="assets/img/icons/android-chrome-36x36.png" alt="Google Scholar" style="width:24px;height:24px;">
+        </span>
+    </a>
+    {% endif %}
+
     <i> &nbsp;&nbsp; </i>
 </span>
