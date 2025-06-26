@@ -1,16 +1,16 @@
 ---
 layout: home
 title: 
-date: 2020-11-20 
+date: 2025-06-26 
 ---
 ### Hello there!👋
-I’m Hong Kang (康宏 in chinese) a dedicated **M.Phil student** majoring in **Computer and Information Engineering** at the School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen (**CUHKSZ**). My academic journey is anchored at the [<span style="color:olive">Human-Crypto Society Laboratory</span>](https://hcslab.cuhk.edu.cn/) (**HCSLab**), where I'm privileged to be under the expert guidance of [<span style="color:olive">Prof. Wei Cai</span>](https://mypage.cuhk.edu.cn/academics/caiwei/).
+I'm **Hong Kang** (康宏 in Chinese), currently a **Ph.D. student in Computer Science** at **McGill University**, supervised by [<span style="color:olive">Prof. Xue Liu</span>](https://www.cs.mcgill.ca/~xueliu/). My research centers on **Blockchain/Web3 Security**, **Incentive Mechanism Design**, and **Decentralized AI**.
 
-Before the M.Phil studies, I proudly earned a **B.Eng** Degree in **Electronic Information Engineering** from the University of Electronic Science and Technology of China (**UESTC**) and a joint B.Eng Degree (with **First Class Honors**) from the University of Glasgow (**UofG**) in 2021. During this period, I had the honor of being supervised by [<span style="color:olive">Prof. Chunbo Luo</span>](https://computerscience.exeter.ac.uk/staff/cl535?sm=cl535#) and [<span style="color:olive">Prof. Lei Zhang</span>](https://www.gla.ac.uk/schools/engineering/staff/leizhang/).
+Previously, I completed my **M.Phil. in Computer and Information Engineering** at **The Chinese University of Hong Kong, Shenzhen (CUHKSZ)**, where I conducted research at the [<span style="color:olive">Human-Crypto Society Laboratory</span>](https://hcslab.cuhk.edu.cn/) (**HCSLab**) under the guidance of [<span style="color:olive">Prof. Wei Cai</span>](https://mypage.cuhk.edu.cn/academics/caiwei/).
 
-My research passion lies at the intersection of **Blockchain/Web3**, **Incentive Mechanism Design**, **Edge Intelligence**, and **Security/Privacy**. As I delve deeper into these fields, I'm keenly exploring opportunities to further my studies with a **Ph.D.** program for the **Spring/Fall 2024**.
+I also hold a **B.Eng. degree in Electronic Information Engineering** from **UESTC** and a joint **B.Eng. (First Class Honors)** in Electronics and Electrical Engineering from the **University of Glasgow**, where I was mentored by [<span style="color:olive">Prof. Chunbo Luo</span>](https://computerscience.exeter.ac.uk/staff/cl535?sm=cl535#) and [<span style="color:olive">Prof. Lei Zhang</span>](https://www.gla.ac.uk/schools/engineering/staff/leizhang/).
 
-Thank you for stopping by, and I look forward to potentially collaborating or crossing academic paths in the near future.
+I'm always open to collaboration and meaningful academic exchange—thanks for visiting, and I hope our paths cross soon!
 
 <!-- 
 <a href="/contact.html" class="highlighted">Contact Me</a> -->

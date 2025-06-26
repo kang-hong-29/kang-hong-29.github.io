@@ -34,7 +34,6 @@ layout: default
       <!-- CONTACT DETAILS SECTION directly under the image -->
       <div class="contact-details mt-3">
         <p><strong>Email:</strong> {{ site.email }}</p>
-        <p><strong>Phone:</strong> {{ site.phonenumber }}</p>
         <!-- Add more details as needed -->
       </div>
     </div>
@@ -292,57 +291,54 @@ $('.show').show()
 </style>
 
 <style>
-    .card {
-    &.profile-card {
-      margin: auto;
-      border: none;
-      position: relative;
-      background-color: var(--home-bg-color);
+  .card.profile-card {
+    margin: auto;
+    border: none;
+    position: relative;
+    background-color: var(--home-bg-color);
+  }
 
-      .img-thumbnail {
-        &.profile-image {
-          /* width: 400px;
-          height: 500px; */
-          float: left;
-          border-radius: 20%;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+  .card.profile-card .img-thumbnail.profile-image {
+    width: 230px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-        &.animated {
-          animation-name: fadeInLeft;
-          animation-duration: 1s;
-        }
-      }
+  .card.profile-card .img-thumbnail.animated {
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+  }
 
-      .additional-info {
-        h4 {
-          margin-top: 1rem;
-        }
+  .card.profile-card .additional-info h4 {
+    margin-top: 1rem;
+  }
 
-        ul {
-          list-style-type: none;
-          padding-left: 0;
+  .card.profile-card .additional-info ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 
-          li {
-            margin-bottom: 0.5rem;
-          }
-        }
-      }
+  .card.profile-card .additional-info ul li {
+    margin-bottom: 0.5rem;
+  }
 
-      .education-section {
-        .card-body {
-          color: var(--education-font-color);
+  .card.profile-card .education-section .card-body {
+    color: var(--education-font-color);
+  }
 
-          &.animated {
-            animation-name: fadeInRight;
-            animation-duration: 1s;
-          }
+  .card.profile-card .education-section .card-body.animated {
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+  }
 
-          p {
-            margin-top: 0;
-          }
-        }
-      }
-    }
+  .card.profile-card .education-section .card-body p {
+    margin-top: 0;
+  }
+
+  .contact-details {
+    text-align: center;
   }
 </style>

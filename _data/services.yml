@@ -1,5 +1,9 @@
 - Role: "Reviewer"
   Type: "Journal"
+  ConferenceOrJournalName: "IEEE/ACM Transactions on Networking"
+
+- Role: "Reviewer"
+  Type: "Journal"
   ConferenceOrJournalName: "IEEE Transactions on Cloud Computing"
 
 - Role: "Reviewer"
